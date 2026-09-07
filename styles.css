@@ -251,7 +251,22 @@ a:hover { text-decoration: underline; }
 .project-meta li::before { content: "→"; position: absolute; left: 0; color: var(--brand); font-weight: 700; }
 .project-meta strong { color: var(--text); }
 .project-stack { font-size: .85rem; color: var(--text-mute); font-family: var(--font-sans); margin: 0 0 .2rem; }
-.project .btn { margin-top: 1rem; }
+.project-links { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.1rem; }
+
+/* More projects grid */
+.more-title { font-size: clamp(1.35rem, 3vw, 1.8rem); font-weight: 700; margin-bottom: .4rem; }
+.more-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.1rem; }
+.mini {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 1.3rem 1.3rem 1.1rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;
+  transition: transform .18s var(--ease), box-shadow .18s var(--ease), border-color .18s var(--ease);
+}
+.mini:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--brand); }
+.mini h4 { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; margin: 0 0 .5rem; letter-spacing: -.01em; }
+.mini p { color: var(--text-soft); font-size: .92rem; margin: 0 0 .9rem; flex: 1; }
+.mini a { font-weight: 600; font-size: .88rem; color: var(--brand); align-self: flex-start; }
+.mini a:hover { text-decoration: underline; }
+.mini-note { font-size: .8rem; color: var(--text-mute); font-weight: 500; align-self: flex-start; }
 
 /* ---------- Process / steps ---------- */
 .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.2rem; counter-reset: step; }

@@ -25,18 +25,18 @@ It's static — just open `index.html` in a browser. For a local server:
 python3 -m http.server 8000   # then visit http://localhost:8000
 ```
 
-## Personalize it (search `index.html` for `EDIT`)
+## Personalize it
 
-Everything is real content from your existing site, reframed for OMIS. A few
-spots are placeholders — marked with `<!-- EDIT: ... -->` comments:
+The content is real — your projects, metrics, skills, and contact links from
+mgcounts.com. The **only** placeholder left (marked `<!-- EDIT -->` in
+`index.html`) is:
 
-1. **LinkedIn URL** — in the Contact section, replace
-   `https://www.linkedin.com/in/your-profile` with your real profile.
-2. **Email (optional)** — an "Email me" button is included but hidden. To show it,
-   set the address in `mailto:you@example.com` and remove the `hidden` attribute.
-3. **Project links (optional)** — each project has a hidden "View details" / "Watch
-   live" button. Add a real URL and remove `hidden` to show it.
-4. **Hero stats** — the three numbers under the hero are editable placeholders.
+- **LinkedIn URL** — in the Contact section, replace
+  `https://www.linkedin.com/in/your-profile` with your real profile (or delete
+  that button if you don't want it).
+
+Everything else — the email (`straightfrommgyt@gmail.com`), GitHub, YouTube, and
+all project links — points at your real accounts and live sites.
 
 ## Deploy
 
